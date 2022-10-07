@@ -12,7 +12,7 @@ headers = {"AccountKey": st.secrets["LTA_APIKEY"],
            "accept": "application/json"}
 response = requests.request(method="get", url=url, headers=headers)
 lta_data = response.json()
-#print (json.dumps(lta_data,indent=4))
+print (json.dumps(lta_data,indent=4)) 
 #---------------- hdb carpark data from data.gov.sg api ----------------#
 ## require current date and time as part of query parameter ##
 ## hence need to set up system time using datetime module ##
